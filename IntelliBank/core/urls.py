@@ -20,17 +20,12 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name='index'),
-    path('expertlogin/', views.expertlogin, name='expertlogin'),
-    path('experthome/', views.experthome, name='experthome'),
+    path('', views.index, name='index'),   
     path('home/', views.home, name='home'),
     path('login/', views.login, name='login'),
     path('register/', views.register, name='register'),
     path('logout/', views.logout, name='logout'),
-    path('verify/', views.email_verify, name='emailverify'),
-    #path('historic/', views.historic, name='home'),
-    path('generatedoc/', views.generatedoc, name='generatedoc'),
-    path('translate/', views.translation, name='custom'),
+    path('verify/', views.email_verify, name='emailverify'),  
     path('api/', include('api.urls')),
     path('predict/', views.predict, name='predict')
 ]
