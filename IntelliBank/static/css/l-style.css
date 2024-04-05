@@ -162,3 +162,21 @@ input[type="submit"]:active
     height: calc(20vw - 2px);
   }
 }
+
+p{
+  
+  justify-content: center;
+  align-items: center;
+  min-height: 20vh;
+ 
+}
+
+.signin .content .form button[type="submit"]{
+  padding: 10px;
+  background: #45a29e;
+  color: #000;
+  font-weight: 600;
+  font-size: 1.35em;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
