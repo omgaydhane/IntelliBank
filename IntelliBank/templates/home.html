@@ -1,0 +1,159 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+
+    <!--<link rel="icon" type="image/png" href="images/logo.png">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive-style.css' %}">
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+    
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-stream navbar-toggler-icon"></i>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav menu-navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/logout/">Logout</a>
+                  </li>
+                  
+                  <!-- <li class="nav-item mt-3 mt-lg-0">
+                    <a class="main-btn" href="/expertlogin/">Become an Expert</a>
+                  </li> -->
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <section id="Home" class="banner_wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center text-md-start">
+            <h6>welcome to</h6>
+            <h1>IntelliBank<br><span>your AI Assistant</span><br></h1>
+            <div class="mt-4">
+              
+</script>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="About" class="About_wrapper">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-lg-5 mb-4 mb-lg-0">
+            <img src="{% static 'images/intro-img.png' %}" class="img-fluid rounded-3" alt="About-Us">
+          </div>
+          <div class="col-lg-7 ps-lg-5 text-center text-lg-start">
+            <div class="my-3 mb-lg-0">
+              <span class="subtitle">Who we are</span>
+              <h2>About Us</h2>
+              <p>IntelliBank is a groundbreaking initiative at the forefront of revolutionizing banking dialogue systems. Our mission is to enhance customer experiences by employing cutting-edge technologies to ensure accurate intent detection and discovery, tailored specifically for the banking sector.</p>
+            </div> 
+
+            
+          </div>
+        </div>
+      </div>
+    </section>  
+
+    <section id="Services" class="Services_wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center mb-4">
+            <span class="subtitle">What we do</span>
+            <h2>Services</h2>
+            <p>We leverage cutting-edge techniques like Adaptive Decision Boundary and Contrastive Learning with Nearest Neighbors to accurately detect known intents and discover emerging intent categories, ensuring robust and adaptable interaction in banking dialogue systems.</p>
+          </div>
+          <div class="row">
+            <div class="">
+              <div class="card " onClick="window.location.href='http://localhost:8000/predict';">
+                <div class="card-body text-md-start  text-center">
+                  <img src="{% static 'images/analysis.png' %}" class="img-fluid mb-4" alt="Services_1">                
+                  <h3 class="card-title">Chat with UI</h3>
+                  <p class="card-text">A customised chat assistant to assist you with your document-related questions and to aid ordinary people in understanding the complexity of Indian laws.</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- <div class="col-lg-6 col-md-6 mb-6">
+              <div class="card " onClick="window.location.href='/generatedoc/';">
+                <div class="card-body text-md-start  text-center">
+                  <img src="{% static 'images/web.png' %}" class="card-fluid mb-4" alt="Services_3">
+                  <h3 class="card-title">Generate Legal Documents</h3>
+                  <p class="card-text">AI-enabled contract creator that leverages our templates and your inputs to build the right legal contracts in just a few clicks.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="card">
+                <div class="card-body text-md-start  text-center">
+                  <img src="{% static 'images/video.png' %}" class="card-fluid mb-4" alt="Services_4">
+                  <h3 class="card-title">Translate Documents</h3>
+                  <p class="card-text">Streamline legal documents by translating complex legal jargon into plain, understandable language for improved accessibility and comprehension.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="card">
+                <div class="card-body text-md-start text-center">
+                  <img src="{% static 'images/web.png' %}" class="card-fluid mb-4" alt="Services_6">                
+                  <h3 class="card-title">Connect with an Expert</h3>
+                  <p class="card-text"> Legal assistance if you still require the expertise of a lawyer to achieve the highest levels of contract drafting.</p>
+                </div>
+              </div> -->
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Contact" class="Footer_wrapper mt-3 mt-md-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg col-md-7">
+            <ul class="list-unstyled d-flex justify-content-center justify-content-md-end justify-content-lg-center social-icon mb-3 md-mb-0">
+              <li>
+                <a href="https://www.instagram.com/justjanhavi_/" role="button">
+                  <i class="fab fa-instagram fa-lg me-5"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/janhavik_2407" role="button">
+                  <i class="fab fa-twitter fa-lg me-5"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/janhavi-khanvilkar-8234161b4" role="button">
+                  <i class="fab fa-linkedin fa-lg me-5"></i>
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

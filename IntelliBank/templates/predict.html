@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Make Prediction</title>
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+        <label for="user_input">Enter your text:</label>
+        <input type="text" name="user_input" id="user_input" required>
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
