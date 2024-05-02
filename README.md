@@ -37,14 +37,6 @@ Key Features:
     Installation
 
 
-Contributing
-
-We welcome contributions from the community! If you're interested in contributing to New Intent Detection and Discovery, please check out our Contribution Guidelines.
-
-License
-
-This project is licensed under the MIT License.
-
 Contact Us
 
 For inquiries or support, please contact us at contact@newintentdiscovery.com.
